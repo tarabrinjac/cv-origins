@@ -39,7 +39,7 @@ Informatics and Computer Engineering
 
 5 out of 8 semesters completed
 * HTML Academy
-PDF
+[Basic HTML and CSS](Basic-HTML-and-CSS.pdf)
 
 ## English language
 A1 - 45%
