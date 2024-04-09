@@ -23,9 +23,9 @@ My goal is to independently complete my education, abandoned due to circumstance
 
 ## Code example
 ```
-function multiply(a, b){
-  return a * b;
-}
+    function multiply(a, b){
+        return a * b;
+    }
 ```
 
 ## Experience
