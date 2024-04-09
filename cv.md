@@ -22,9 +22,11 @@ My goal is to independently complete my education, abandoned due to circumstance
 * VSC - 75%
 
 ## Code example
+```
 function multiply(a, b){
   return a * b;
 }
+```
 
 ## Experience
 This CV on gh-pages reference
