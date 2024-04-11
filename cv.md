@@ -1,5 +1,5 @@
 # Jacob Tarabrin
-Image
+![avatar](img/avatar-210.jpg)
 
 ## Junior Frontend Developer
 
@@ -45,4 +45,4 @@ Informatics and Computer Engineering
 
 ## English language
 A1 - 45%
-Image
+![english certificate](img//engcert.jpg)
