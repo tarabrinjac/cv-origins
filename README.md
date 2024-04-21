@@ -1,1 +1,1 @@
-https://tarabrinjac.github.io/rsschool-cv/cv
+https://tarabrinjac.github.io/rsschool-cv
