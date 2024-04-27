@@ -29,7 +29,7 @@ My goal is to independently complete my education, abandoned due to circumstance
 ```
 
 ## Experience
-This CV on gh-pages reference
+[CV web-page on gh-pages](https://tarabrinjac.github.io/rsschool-cv/)
 
 ## Education
 * North Caucasus Humanitarian Technical Institute 2014-2017
