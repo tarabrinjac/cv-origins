@@ -44,5 +44,5 @@ Informatics and Computer Engineering
 [Basic HTML and CSS](Basic-HTML-and-CSS.pdf)
 
 ## English language
-A1 - 45%
-![english certificate](img//engcert.jpg)
+A1+ - 35%
+![english certificate](img/engcert.jpg)
