@@ -41,9 +41,15 @@ Informatics and Computer Engineering
 
 5 out of 8 semesters completed
 * HTML Academy
+
+
 ![education certificate](img/edcert-612.jpg)
+
+
 [Basic HTML and CSS](Basic-HTML-and-CSS.pdf)
 
 ## English language
 A2 Elemetary - 45%
-![english certificate](img/engcert-600.jpg)
+
+
+![english certificate](img/engcert-600.png)
