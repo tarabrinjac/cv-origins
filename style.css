@@ -1,10 +1,58 @@
-/** Smooth scrolling */
+/** ==========================================================================
+/** Base
+/** ========================================================================== */
+
+/** 1. Smooth scrolling */
+/** 2. Font stylization */
 
 .page-html {
   scroll-behavior: smooth;
   font-family: "Cabin", sans-serif;
-  font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
   color: #000000;
 }
+
+/** ==========================================================================
+/** Headers
+/** ========================================================================== */
+
+.page-header {
+  font-size: 2.55em;
+  font-weight: 500;
+}
+
+.section-header {
+  position: relative;
+  font-size: 1.45em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 1.7em;
+  height: 0.2em;
+  background-color: #000000;
+}
+
+.special-header {
+  display: inline-block;
+  font-size: 1.45em;
+  font-weight: 500;
+  background-color: #ffc905;
+  padding: 0.1em 0.3em 0.15em;
+  border-radius: 0.1em;
+}
+
+.subsection-header {
+  font-size: 1.22em;
+  font-weight: 500;
+}
+
+/** ==========================================================================
+/** Links
+/** ========================================================================== */
