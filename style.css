@@ -48,11 +48,11 @@
 
 .special-header {
   display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.2em;
   font-size: 1.45em;
   font-weight: 500;
   background-color: #ffc905;
-  padding: 0.1em 0.3em 0.2em;
-  border-radius: 0.1em;
 }
 
 /** Subsection Header */
@@ -142,4 +142,52 @@
 
 /** ==========================================================================
 /** Special Text Elements
+/** ========================================================================== */
+
+.skill-name {
+  font-weight: 700;
+}
+
+.skill-percent {
+  display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  background-color: #ffc905;
+}
+
+.experience-name {
+  font-weight: 700;
+}
+
+.experience-date {
+  display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  background-color: #ffc905;
+}
+
+.education-paragraph {
+  font-weight: 700;
+}
+
+.education-name {
+  font-weight: 700;
+}
+
+.education-date {
+  display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  background-color: #ffc905;
+}
+
+.copyright {
+  font-weight: 700;
+}
+
+/** ==========================================================================
+/** Sections
 /** ========================================================================== */
