@@ -15,26 +15,26 @@
 }
 
 /** ==========================================================================
-/** Headers
+/** Headings
 /** ========================================================================== */
 
-/** Page Header */
+/** Page Heading */
 
-.page-header {
+.page-heading {
   font-size: 2.55em;
   font-weight: 500;
 }
 
-/** Section Header */
+/** Section Heading */
 
-.section-header {
+.section-heading {
   position: relative;
   font-size: 1.45em;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.section-header::before {
+.section-heading::before {
   content: "";
   position: absolute;
   top: 1.5em;
@@ -44,9 +44,9 @@
   background-color: #000000;
 }
 
-/** Special Header */
+/** Special Heading */
 
-.special-header {
+.special-heading {
   display: inline-block;
   padding: 0.1em 0.3em 0.2em;
   border-radius: 0.2em;
@@ -55,9 +55,9 @@
   background-color: #ffc905;
 }
 
-/** Subsection Header */
+/** Subsection Heading */
 
-.subsection-header {
+.subsection-heading {
   font-size: 1.22em;
   font-weight: 500;
 }
@@ -71,11 +71,11 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  padding-bottom: 0.1em;
+  padding: 1em 0;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-link::before {
@@ -85,7 +85,7 @@
   left: 0;
   width: 100%;
   height: 0.15em;
-  background-color: #000000;
+  background-color: #ffc905;
   opacity: 0;
   transition: opacity 400ms, transform 400ms;
 }
@@ -93,7 +93,7 @@
 .nav-link:hover::before,
 .nav-link:focus::before {
   opacity: 1;
-  transform: translate3d(0, 0.9em, 0);
+  transform: translate3d(0, -0.5em, 0);
 }
 
 /** Contact Link */
@@ -130,8 +130,8 @@
 /** Rolling Scopes School Link */
 
 .rs-link {
-  display: inline-block;  /** */
-  padding: 0.2em 0.3em 0.2em 0.2em; /** */
+  display: inline-block;
+  padding: 0.2em 0.3em 0.2em 0.2em;
   font-size: 2.5em;
   font-weight: 700;
   text-transform: uppercase;
@@ -189,5 +189,40 @@
 }
 
 /** ==========================================================================
-/** Sections
+/** Sections Layout
 /** ========================================================================== */
+
+/** Header */
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  background-color: #292935;
+}
+
+.container {
+  display: flex;
+  flex-basis: 80%;
+  max-width: 1440px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0;
+  margin: 1em 0;
+  list-style: none;
+}
+
+/** Header */
+
+/* border: solid 1px #ff0000;
+border: solid 1px #ffff00;
+border: solid 1px #008000; */
