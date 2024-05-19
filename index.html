@@ -11,7 +11,7 @@
 <body>
 
   <header class="page-header">
-    <div class="container">
+    <div class="header-container">
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -26,81 +26,88 @@
     </div>
   </header>
 
-  <main>
-    <section class="section" id="about">
-      <img src="img/avatar-350-mirror.jpg" alt="applicant avatar" width="350" height="350">
+  <main class="page-main">
+    <div class="page-container">
+      <section class="section section-about" id="about">
+        <div class="about-avatar-wrapper">
+          <img class="about-avatar" src="img/avatar-350-mirror.jpg" alt="applicant avatar" width="350" height="350">
+        </div>
 
-      <h1 class="page-heading">Jacob Tarabrin</h1>
+        <div class="about-text-wrapper">
+          <h1 class="page-heading">Jacob Tarabrin</h1>
 
-      <h2 class="special-heading">Junior FE Developer</h2>
+          <h2 class="special-heading">Junior FE Developer</h2>
 
-      <h2 class="section-heading">About</h2>
-      <p>My goal is to become a professional developer in the field of web technologies. I love the web for accessibility in exploration and open friendly community. I am also attracted by the need to constantly acquire new knowledge. By myself I strive to learn something new every day. This is how I feel personal growth.
-      </p>
-    </section>
+          <h2 class="section-heading">About</h2>
+          <p class="about-paragraph">My goal is to become a professional developer in the field of web technologies. I love the web for accessibility in exploration and open friendly community. I am also attracted by the need to constantly acquire new knowledge. By myself I strive to learn something new every day. This is how I feel personal growth.
+          </p>
+        </div>
+      </section>
+      <div class="content-container">
+        <section class="section" id="contacts">
+          <h2 class="section-heading">Contacts</h2>
+          <ul>
+            <li><a class="contact-link" href="mailto:tarabrinjac@gmail.com" title="email">tarabrinjac@gmail.com</a></li>
+            <li><a class="contact-link" href="https://discordapp.com/users/620864693858467840" title="discord" target="_blank" rel="noreferrer noopener">@tarabrinja#0738</a></li>
+            <li><a class="contact-link" href="https://t.me/tarabrinja" title="telegram" target="_blank" rel="noreferrer noopener">@tarabrinja</a></li>
+            <li><a class="contact-link" href="https://github.com/tarabrinjac" title="github" target="_blank" rel="noreferrer noopener">tarabrinjac</a></li>
+          </ul>
+        </section>
 
-    <section class="section" id="contacts">
-      <h2 class="section-heading">Contacts</h2>
-      <ul>
-        <li><a class="contact-link" href="mailto:tarabrinjac@gmail.com" title="email">tarabrinjac@gmail.com</a></li>
-        <li><a class="contact-link" href="https://discordapp.com/users/620864693858467840" title="discord" target="_blank" rel="noreferrer noopener">@tarabrinja#0738</a></li>
-        <li><a class="contact-link" href="https://t.me/tarabrinja" title="telegram" target="_blank" rel="noreferrer noopener">@tarabrinja</a></li>
-        <li><a class="contact-link" href="https://github.com/tarabrinjac" title="github" target="_blank" rel="noreferrer noopener">tarabrinjac</a></li>
-      </ul>
-    </section>
+        <section class="section" id="skills">
+          <h2 class="section-heading">Skills</h2>
+          <ul>
+            <li><span class="skill-name">HTML</span> - <span class="skill-percent">75%</span></li>
+            <li><span class="skill-name">CSS</span> - <span class="skill-percent">45%</span></li>
+            <li><span class="skill-name">JS</span> - <span class="skill-percent">15%</span></li>
+            <li><span class="skill-name">DSA</span> - <span class="skill-percent">5%</span></li>
+            <li><span class="skill-name">GIT</span> - <span class="skill-percent">45%</span></li>
+            <li><span class="skill-name">VSC</span> - <span class="skill-percent">75%</span></li>
+            <li><span class="skill-name">FIGMA</span> - <span class="skill-percent">75%</span></li>
+          </ul>
+        </section>
 
-    <section class="section" id="skills">
-      <h2 class="section-heading">Skills</h2>
-      <ul>
-        <li><span class="skill-name">HTML</span> - <span class="skill-percent">75%</span></li>
-        <li><span class="skill-name">CSS</span> - <span class="skill-percent">45%</span></li>
-        <li><span class="skill-name">JS</span> - <span class="skill-percent">15%</span></li>
-        <li><span class="skill-name">DSA</span> - <span class="skill-percent">5%</span></li>
-        <li><span class="skill-name">GIT</span> - <span class="skill-percent">45%</span></li>
-        <li><span class="skill-name">VSC</span> - <span class="skill-percent">75%</span></li>
-        <li><span class="skill-name">FIGMA</span> - <span class="skill-percent">75%</span></li>
-      </ul>
-    </section>
+        <section class="section" id="code">
+          <h2 class="section-heading">Code</h2>
+          <pre><code>
+            function multiply(a, b){
+                return a * b;
+            }
+          </code></pre>
+        </section>
 
-    <section class="section" id="code">
-      <h2 class="section-heading">Code</h2>
-      <pre><code>
-        function multiply(a, b){
-            return a * b;
-        }
-      </code></pre>
-    </section>
+        <section class="section" id="experience">
+          <h2 class="section-heading">Experience</h2>
+          <p><span class="experience-date">05/2024</span> <span class="experience-name">This Curriculum Vitae</span></p>
+        </section>
 
-    <section class="section" id="experience">
-      <h2 class="section-heading">Experience</h2>
-      <p><span class="experience-date">05/2024</span> <span class="experience-name">This Curriculum Vitae</span></p>
-    </section>
+        <section class="section" id="education">
+          <h2 class="section-heading">Education</h2>
+          <ul>
+            <li>
+              <h3 class="subsection-heading">North Caucasus Humanitarian Technical Institute</h3>
+              <p class="education-paragraph">Informatics and Computer Engineering</p>
+              <p><span class="education-date">2014-2018</span> <span class="education-name">Bachelor's degree</span></p>
+            </li>
+            <li>
+              <h3 class="subsection-heading">HTML Academy</h3>
+              <p><span class="education-date">02/2017</span> <span class="education-name">Basic HTML and CSS</span></p>
+              <a href="Basic-HTML-and-CSS.pdf" target="_blank" rel="noreferrer noopener">
+                <img src="img/edcert-612-cut.jpg" alt="education certificate" width="436" height="77">
+              </a>
+            </li>
+          </ul>
+        </section>
 
-    <section class="section" id="education">
-      <h2 class="section-heading">Education</h2>
-      <ul>
-        <li>
-          <h3 class="subsection-heading">North Caucasus Humanitarian Technical Institute</h3>
-          <p class="education-paragraph">Informatics and Computer Engineering</p>
-          <p><span class="education-date">2014-2018</span> <span class="education-name">Bachelor's degree</span></p>
-        </li>
-        <li>
-          <h3 class="subsection-heading">HTML Academy</h3>
-          <p><span class="education-date">02/2017</span> <span class="education-name">Basic HTML and CSS</span></p>
-          <a href="Basic-HTML-and-CSS.pdf" target="_blank" rel="noreferrer noopener">
-            <img src="img/edcert-612-cut.jpg" alt="education certificate" width="436" height="77">
+        <section class="section" id="english">
+          <h2 class="section-heading">English</h2>
+          <p><span class="skill-name">A2 Elemetary</span> - <span class="skill-percent">45%</span></p>
+          <a href="https://www.efset.org/quick-check/launch/" target="_blank" rel="noreferrer noopener">
+            <img src="img/engcert-600.png" alt="english certificate" width="436" height="228">
           </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section" id="english">
-      <h2 class="section-heading">English</h2>
-      <p><span class="skill-name">A2 Elemetary</span> - <span class="skill-percent">45%</span></p>
-      <a href="https://www.efset.org/quick-check/launch/" target="_blank" rel="noreferrer noopener">
-        <img src="img/engcert-600.png" alt="english certificate" width="436" height="228">
-      </a>
-    </section>
+        </section>
+      </div>
+    </div>
   </main>
 
 

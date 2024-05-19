@@ -10,7 +10,7 @@
   font-family: "Cabin", sans-serif;
   font-size: 110%;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
   color: #000000;
 }
 
@@ -41,15 +41,16 @@
   left: 0;
   width: 1.7em;
   height: 0.15em;
-  background-color: #000000;
+  background-color: #ffc905;
 }
 
 /** Special Heading */
 
 .special-heading {
   display: inline-block;
-  padding: 0.1em 0.3em 0.2em;
+  margin: 0;
   border-radius: 0.2em;
+  padding: 0.1em 0.3em 0.2em;
   font-size: 1.45em;
   font-weight: 500;
   background-color: #ffc905;
@@ -76,6 +77,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+
+  border: solid 1px #ffc0cb;
 }
 
 .nav-link::before {
@@ -198,18 +201,24 @@
   display: flex;
   justify-content: center;
   background-color: #292935;
+
+  border: solid 1px #ff0000;
 }
 
-.container {
+.header-container {
   display: flex;
   flex-basis: 80%;
   max-width: 1440px;
+
+  border: solid 1px #ffff00;
 }
 
 .header-nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  border: solid 1px #008000;
 }
 
 .nav-list {
@@ -219,10 +228,89 @@
   padding: 0;
   margin: 1em 0;
   list-style: none;
+
+  border: solid 1px #ffa500;
 }
 
-/** Header */
+.nav-item {
+  border: solid 1px #0000ff;
+}
 
-/* border: solid 1px #ff0000;
-border: solid 1px #ffff00;
-border: solid 1px #008000; */
+/** About */
+
+.page-main {
+  display: flex;
+  justify-content: center;
+
+  border: solid 1px #ff0000;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  max-width: 1440px;
+
+  border: solid 1px #ffff00;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  border: solid 1px #008000;
+}
+
+.about-avatar-wrapper {
+  position: relative;
+
+  border: solid 1px #ffa500;
+}
+
+.about-avatar {
+  display: block;
+}
+
+.about-avatar-wrapper::before {
+  position: absolute;
+  content: "";
+  left: 13%;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  background-color: #ffc905;
+  opacity: 70%;
+}
+
+.about-text-wrapper {
+  padding: 0 2em;
+  width: 50%;
+
+  border: solid 1px #ffa500;
+}
+
+.page-heading {
+  border: solid 1px #0000ff;
+}
+
+.special-heading {
+  border: solid 1px #0000ff;
+}
+
+.section-heading {
+  border: solid 1px #0000ff;
+}
+
+.about-paragraph {
+  border: solid 1px #0000ff;
+}
+
+/** Content Sections Layout */
+
+/* border: solid 1px #ff0000; red
+/* border: solid 1px #ffa500; orange
+/* border: solid 1px #008000; green
+/* border: solid 1px #ffff00; yellow
+/* border: solid 1px #0000ff; blue
+/* border: solid 1px #ffc0cb; pink */
