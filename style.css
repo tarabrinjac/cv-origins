@@ -291,9 +291,9 @@
 .about-avatar-wrapper::before {
   position: absolute;
   content: "";
-  left: 13%;
+  left: 2em;
   top: 0;
-  width: 12%;
+  width: 13%;
   height: 100%;
   background-color: #ffc905;
   opacity: 70%;
@@ -333,6 +333,7 @@
 }
 
 .section {
+  padding: 0 2em;
   width: 50%;
 
   border: solid 1px #ffa500;
@@ -378,6 +379,16 @@
   .section {
     width: 100%;
   }
+}
+
+/** Content Sections Common Stylezation */
+
+.content-section-heading {
+  color: #ffffff;
+}
+
+.content-subsection-heading {
+  color: #ffffff;
 }
 
 /* border: solid 1px #ff0000; red
