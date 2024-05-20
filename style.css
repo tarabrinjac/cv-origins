@@ -89,7 +89,7 @@
   left: 0;
   width: 100%;
   height: 0.15em;
-  background-color: #ffc905;
+  background-color: hwb(47 2% 0%);
   opacity: 0;
   transition: opacity 400ms, transform 400ms;
 }
@@ -104,14 +104,14 @@
 
 .contact-link {
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-  text-underline-offset: 0.2em;
-  color: #000000;
+  text-underline-offset: 0.4em;
+  color: #ffffff;
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  text-decoration-color: rgba(0, 0, 0, 1);
+  text-decoration-color: rgba(255, 201, 5, 1);
   text-underline-offset: 0.3em;
 }
 
@@ -389,6 +389,121 @@
 
 .content-subsection-heading {
   color: #ffffff;
+}
+
+/** Contacts */
+
+.contacts-list {
+  position: relative;
+  border: solid 1px #008000;
+  padding: 0.7em 0;
+  list-style: none;
+}
+
+.contacts-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5em;
+  height: 100%;
+  background-color: #ffc905;
+}
+
+.contact-item {
+  /* border: solid 1px #ffff00; */
+  padding: 0.35em 0;
+}
+
+.contact-link {
+  padding-left: 3.5em;
+
+  /* border: solid 1px #ff0000; */
+}
+
+.email-link,
+.discord-link,
+.telegram-link,
+.github-link {
+  position: relative;
+}
+
+.email-link::before {
+  /* border: solid 1px #000000; */
+  position: absolute;
+  content: "";
+  left: 0.5em;
+  top: -0.1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(img/ico-email-48.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.discord-link::before {
+  /* border: solid 1px #000000; */
+  position: absolute;
+  content: "";
+  left: 0.5em;
+  top: -0.1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(img/ico-discord-50.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.telegram-link::before {
+  /* border: solid 1px #000000; */
+  position: absolute;
+  content: "";
+  left: 0.5em;
+  top: -0.1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(img/ico-telegram-50.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.github-link::before {
+  /* border: solid 1px #000000; */
+  position: absolute;
+  content: "";
+  left: 0.5em;
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(img/ico-github-50.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+/** Skills */
+
+.skills-list {
+  border: solid 1px #008000;
+}
+
+.skill-item {
+  border: solid 1px #ffff00;
+}
+
+.skill-name-container {
+  border: solid 1px #ffc0cb;
+}
+
+.skill-name {
+  border: solid 1px #ff0000;
+}
+
+.skill-percent-container {
+  border: solid 1px #ffc0cb;
+}
+
+.skill-percent {
+  border: solid 1px #ff0000;
 }
 
 /* border: solid 1px #ff0000; red
