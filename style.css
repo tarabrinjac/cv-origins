@@ -150,14 +150,18 @@
 
 .skill-name {
   font-weight: 700;
+  padding: 0.2em;
 }
 
 .skill-percent {
-  display: inline-block;
-  padding: 0.1em 0.3em 0.2em;
+  /* display: inline-block; */
+  /* padding: 0.1em 0.3em 0.2em; */
+  padding: 0.2em;
   border-radius: 0.2em;
+  width: 3em;
   font-weight: 700;
   background-color: #ffc905;
+  text-align: center;
 }
 
 .experience-name {
@@ -181,6 +185,18 @@
 }
 
 .education-date {
+  display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  background-color: #ffc905;
+}
+
+.english-level {
+  font-weight: 700;
+}
+
+.english-percent {
   display: inline-block;
   padding: 0.1em 0.3em 0.2em;
   border-radius: 0.2em;
@@ -379,6 +395,22 @@
   .section {
     width: 100%;
   }
+
+  .section-skills {
+    order: 2;
+  }
+
+  .section-code {
+    order: 3;
+  }
+
+  .section-experience {
+    order: 4;
+  }
+
+  .section-education {
+    order: 5;
+  }
 }
 
 /** Content Sections Common Stylezation */
@@ -484,22 +516,86 @@
 
 .skills-list {
   border: solid 1px #008000;
+  list-style: none;
+  padding: 0;
 }
 
 .skill-item {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 16em;
   border: solid 1px #ffff00;
 }
 
-.skill-name-container {
-  border: solid 1px #ffc0cb;
+.skill-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  width: 6em;
+  height: 0.15em;
+  background-color: #5e5d6b;
 }
 
 .skill-name {
+  color: #ffffff;
   border: solid 1px #ff0000;
 }
 
-.skill-percent-container {
-  border: solid 1px #ffc0cb;
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-dsa,
+.skill-git,
+.skill-vsc,
+.skill-figma {
+  position: relative;
+}
+
+.skill-html::before,
+.skill-css::before,
+.skill-js::before,
+.skill-dsa::before,
+.skill-git::before,
+.skill-vsc::before,
+.skill-figma::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  height: 0.15em;
+  background-color: #ffc905;
+}
+
+/** width value = skill percent * 6em */
+
+.skill-html::before {
+  width: 4.5em;
+}
+
+.skill-css::before {
+  width: 2.7em;
+}
+
+.skill-js::before {
+  width: 0.9em;
+}
+
+.skill-dsa::before {
+  width: 0.3em;
+}
+
+.skill-git::before {
+  width: 2.7em;
+}
+
+.skill-vsc::before {
+  width: 4.5em;
+}
+
+.skill-figma::before {
+  width: 4.5em;
 }
 
 .skill-percent {
