@@ -602,6 +602,20 @@
   border: solid 1px #ff0000;
 }
 
+/** Code */
+
+.code-pre {
+  display: flex;
+
+  border: solid 1px #008000;
+}
+
+.code-code {
+  background-color: #ffc905;
+  padding: 0 2em;
+  border: solid 1px #ffff00;
+}
+
 /* border: solid 1px #ff0000; red
 /* border: solid 1px #ffa500; orange
 /* border: solid 1px #008000; green
