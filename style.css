@@ -165,15 +165,19 @@
 }
 
 .experience-name {
+  padding: 0.2em;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .experience-date {
-  display: inline-block;
-  padding: 0.1em 0.3em 0.2em;
+  width: 5.5em;
+  margin-right: 2em;
+  padding: 0.2em;
   border-radius: 0.2em;
   font-weight: 700;
   background-color: #ffc905;
+  text-align: center;
 }
 
 .education-paragraph {
@@ -614,6 +618,21 @@
   background-color: #ffc905;
   padding: 0 2em;
   border: solid 1px #ffff00;
+}
+
+/** Experience */
+
+.experience-paragraph {
+  border: solid 1px #ffff00;
+  display: flex;
+}
+
+.experience-date {
+  border: solid 1px #ff0000;
+}
+
+.experience-name {
+  border: solid 1px #ff0000;
 }
 
 /* border: solid 1px #ff0000; red
