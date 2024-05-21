@@ -182,18 +182,23 @@
 
 .education-paragraph {
   font-weight: 700;
+  display: flex;
 }
 
 .education-name {
   font-weight: 700;
+  padding: 0.2em;
 }
 
 .education-date {
-  display: inline-block;
-  padding: 0.1em 0.3em 0.2em;
+  width: 5.5em;
+  margin-right: 2em;
+  padding: 0.2em;
   border-radius: 0.2em;
   font-weight: 700;
+  color: #000000;
   background-color: #ffc905;
+  text-align: center;
 }
 
 .english-level {
@@ -425,6 +430,7 @@
 
 .content-subsection-heading {
   color: #ffffff;
+  border: solid 1px #0000ff;
 }
 
 /** Contacts */
@@ -633,6 +639,36 @@
 
 .experience-name {
   border: solid 1px #ff0000;
+}
+
+/** Education */
+
+.education-list {
+  border: solid 1px #008000;
+  list-style: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+.education-item {
+  border: solid 1px #ffff00;
+}
+
+.education-paragraph {
+  border: solid 1px #ffa500;
+}
+
+.education-date {
+  border: solid 1px #ff0000;
+}
+
+.education-name {
+  border: solid 1px #ff0000;
+}
+
+.education-image {
+  border: solid 1px #ffa500;
+  display: block;
 }
 
 /* border: solid 1px #ff0000; red
