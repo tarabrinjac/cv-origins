@@ -154,8 +154,6 @@
 }
 
 .skill-percent {
-  /* display: inline-block; */
-  /* padding: 0.1em 0.3em 0.2em; */
   padding: 0.2em;
   border-radius: 0.2em;
   width: 3em;
@@ -203,14 +201,17 @@
 
 .english-level {
   font-weight: 700;
+  padding: 0.2em;
+  color: #ffffff;
 }
 
 .english-percent {
-  display: inline-block;
-  padding: 0.1em 0.3em 0.2em;
+  padding: 0.2em;
+  width: 3em;
   border-radius: 0.2em;
   font-weight: 700;
   background-color: #ffc905;
+  text-align: center;
 }
 
 .copyright {
@@ -669,6 +670,50 @@
 .education-image {
   border: solid 1px #ffa500;
   display: block;
+}
+
+/** English */
+
+.english-paragraph {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 19em;
+  border: solid 1px #ffff00;
+}
+
+.english-paragraph::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 6em;
+  height: 0.15em;
+  background-color: #5e5d6b;
+}
+
+.english-paragraph::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 2.7em;
+  height: 0.15em;
+  background-color: #ffc905;
+}
+
+.english-level {
+  border: solid 1px #ff0000;
+}
+
+.english-percent {
+  border: solid 1px #ff0000;
+}
+
+.english-image {
+  border: solid 1px #ffff00;
+  display: block;
+  margin-bottom: 1em;
 }
 
 /* border: solid 1px #ff0000; red
