@@ -29,7 +29,7 @@ My goal is to independently complete my education, abandoned due to circumstance
 ```
 
 ## Experience
-This CV on gh-pages reference
+[CV web-page on gh-pages](https://tarabrinjac.github.io/rsschool-cv/)
 
 ## Education
 * North Caucasus Humanitarian Technical Institute 2014-2017
@@ -41,8 +41,15 @@ Informatics and Computer Engineering
 
 5 out of 8 semesters completed
 * HTML Academy
+
+
+![education certificate](img/edcert-612.jpg)
+
+
 [Basic HTML and CSS](Basic-HTML-and-CSS.pdf)
 
 ## English language
-A1 - 45%
-![english certificate](img//engcert.jpg)
+A2 Elemetary - 45%
+
+
+![english certificate](img/engcert-600.png)
