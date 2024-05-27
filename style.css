@@ -7,10 +7,11 @@
 
 .page-html {
   scroll-behavior: smooth;
+
   font-family: "Cabin", sans-serif;
   font-size: 110%;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.4;
   color: #000000;
 }
 
@@ -20,28 +21,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
 }
 
 /** ==========================================================================
 /** Headings
 /** ========================================================================== */
 
-/** Page Heading */
+/** Margins and font stylizaion for H1 */
 
 .page-heading {
   margin: 0.39em 0;
+
   font-size: 2.55em;
   font-weight: 500;
 }
 
-/** Section Heading */
+/** Font stylization for H2 */
 
 .section-heading {
   position: relative;
+
   font-size: 1.45em;
   font-weight: 500;
   text-transform: uppercase;
 }
+
+/** Underlining by pseudo for H2 */
 
 .section-heading::before {
   content: "";
@@ -50,22 +60,27 @@
   left: 0;
   width: 1.7em;
   height: 0.15em;
+
   background-color: #ffc905;
 }
 
-/** Special Heading */
+/** Unique H2: display method, margins, font and stroke */
 
 .special-heading {
   display: inline-block;
+
   margin: 0;
-  border-radius: 0.2em;
   padding: 0.1em 0.3em 0.2em;
+
+  border-radius: 0.2em;
+
   font-size: 1.45em;
   font-weight: 500;
+
   background-color: #ffc905;
 }
 
-/** Subsection Heading */
+/** Font stylization for H3 */
 
 .subsection-heading {
   font-size: 1.22em;
@@ -76,70 +91,103 @@
 /** Links
 /** ========================================================================== */
 
-/** Navigation Link */
+/** 1.1 Display method, margins and font for Navigation A in Header */
 
 .nav-link {
   display: inline-block;
+
   position: relative;
+
   padding: 1em 0;
+
+  color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-
-  border: solid 1px #ffc0cb;
 }
+
+/** 1.2 Underlining by pseudo for Navigation A in Header */
 
 .nav-link::before {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 0.15em;
-  background-color: hwb(47 2% 0%);
+
+  background-color: rgb(255, 201, 5);
   opacity: 0;
-  transition: opacity 400ms, transform 400ms;
+
+  transition: opacity 300ms, transform 300ms;
 }
+
+/** 1.3 Underlining appearance by pseudo for Navigation A in Header */
 
 .nav-link:hover::before,
 .nav-link:focus::before {
   opacity: 1;
+
   transform: translate3d(0, -0.5em, 0);
 }
 
-/** Contact Link */
+/** 2.1 Underlining for A in Contacts Section */
 
 .contact-link {
+  padding-left: 3.5em;
+
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   text-underline-offset: 0.4em;
+
   color: #ffffff;
+
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
+/** 2.2 Underlining appearance by pseudo for A in Contacts Section */
+
 .contact-link:hover,
 .contact-link:focus {
-  text-decoration-color: rgba(255, 201, 5, 1);
   text-underline-offset: 0.3em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
 }
 
-/** Tarabrinja's GitHub Link */
+/** 3.1 Experience Link */
+
+.experience-link {
+  text-decoration: none;
+}
+
+.experience-link:hover .experience-name,
+.experience-link:focus .experience-name {
+  text-underline-offset: 0.3em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** 4.1 Tarabrinja's GitHub Link */
 
 .tj-link {
+  margin-left: 1em;
+
   text-transform: uppercase;
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   text-underline-offset: 0.5em;
+
   color: #ffffff;
+
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .tj-link:hover,
 .tj-link:focus {
-  text-decoration-color: rgba(255, 201, 5, 1);
   text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
 }
 
-/** Rolling Scopes School Link */
+/** 5.1 Rolling Scopes School Link */
 
 .rs-link {
   display: inline-block;
@@ -156,8 +204,9 @@
 
 .rs-link:hover,
 .rs-link:focus {
-  text-decoration-color: rgba(0, 0, 0, 1);
   text-underline-offset: 0.2em;
+
+  text-decoration-color: rgba(0, 0, 0, 1);
 }
 
 /** ==========================================================================
@@ -165,33 +214,52 @@
 /** ========================================================================== */
 
 .skill-name {
-  font-weight: 700;
   padding: 0.2em;
+
+  font-weight: 700;
+
+  color: #ffffff;
 }
 
 .skill-percent {
   padding: 0.2em;
+
   border-radius: 0.2em;
+
   width: 3em;
-  font-weight: 700;
-  background-color: #ffc905;
+
   text-align: center;
+
+  font-weight: 700;
+
+  background-color: #ffc905;
 }
 
 .experience-name {
   padding: 0.2em;
+
   font-weight: 700;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.4em;
+
   color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .experience-date {
-  width: 5.5em;
   margin-right: 2em;
   padding: 0.2em;
+
   border-radius: 0.2em;
-  font-weight: 700;
-  background-color: #ffc905;
+
+  width: 5.5em;
+
   text-align: center;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffc905;
 }
 
 .education-paragraph {
@@ -244,37 +312,34 @@
 .page-header {
   display: flex;
   justify-content: center;
-  background-color: #292935;
 
-  border: solid 1px #ff0000;
+  background-color: #292935;
 }
 
 .header-container {
   display: flex;
   flex-basis: 80%;
-  max-width: 1440px;
 
-  border: solid 1px #ffff00;
+  max-width: 1440px;
 }
 
 .header-nav {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+
   padding: 0 2em;
 
-  border: solid 1px #008000;
+  width: 100%;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
-  /* width: 50%; */
-  padding: 0;
-  margin: 1em 0;
-  list-style: none;
 
-  border: solid 1px #ffa500;
+  margin: 1em 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .nav-item {
@@ -287,8 +352,9 @@
   }
 
   .nav-list {
-    width: 100%;
     justify-content: flex-start;
+
+    width: 100%;
   }
 
   .nav-item {
@@ -297,78 +363,67 @@
   }
 }
 
-.nav-item {
-  border: solid 1px #0000ff;
-}
-
 /** About */
 
 .page-main {
   display: flex;
   justify-content: center;
-
-  border: solid 1px #ff0000;
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
   flex-basis: 80%;
-  max-width: 1440px;
 
-  border: solid 1px #ffff00;
+  max-width: 1440px;
 }
 
 .section-about {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  border: solid 1px #008000;
 }
 
 .about-avatar-wrapper {
   position: relative;
 
-  border: solid 1px #ffa500;
+  height: 100%;
 }
 
 .about-avatar {
   display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .about-avatar {
+    min-width: 350px;
+    max-height: 350px;
+  }
 }
 
 .about-avatar-wrapper::before {
   position: absolute;
   content: "";
-  left: 2em;
   top: 0;
+  left: 2em;
   width: 13%;
   height: 100%;
+
   background-color: #ffc905;
   opacity: 70%;
 }
 
 .about-text-wrapper {
   padding: 0 2em;
+
   width: 50%;
-
-  border: solid 1px #ffa500;
-}
-
-.page-heading {
-  border: solid 1px #0000ff;
-}
-
-.special-heading {
-  border: solid 1px #0000ff;
-}
-
-.section-heading {
-  border: solid 1px #0000ff;
 }
 
 .about-paragraph {
-  border: solid 1px #0000ff;
+  padding-bottom: 1em;
 }
 
 /** Content Sections Layout */
@@ -377,15 +432,12 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-
-  border: solid 1px #008000;
 }
 
 .section {
   padding: 0 2em;
-  width: 50%;
 
-  border: solid 1px #ffa500;
+  width: 50%;
 }
 
 .section-contacts {
@@ -454,37 +506,31 @@
 
 .content-subsection-heading {
   color: #ffffff;
-  border: solid 1px #0000ff;
 }
 
 /** Contacts */
 
 .contacts-list {
   position: relative;
-  border: solid 1px #008000;
+
   padding: 0.7em 0;
+
   list-style: none;
 }
 
 .contacts-list::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 2.5em;
   height: 100%;
+
   background-color: #ffc905;
 }
 
 .contact-item {
-  /* border: solid 1px #ffff00; */
   padding: 0.35em 0;
-}
-
-.contact-link {
-  padding-left: 3.5em;
-
-  /* border: solid 1px #ff0000; */
 }
 
 .email-link,
@@ -495,53 +541,53 @@
 }
 
 .email-link::before {
-  /* border: solid 1px #000000; */
   position: absolute;
   content: "";
-  left: 0.5em;
   top: -0.1em;
+  left: 0.5em;
   width: 1.5em;
   height: 1.5em;
-  background-image: url(img/ico-email-48.png);
+
+  background-image: url("img/ico-email-48.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
 
 .discord-link::before {
-  /* border: solid 1px #000000; */
   position: absolute;
   content: "";
-  left: 0.5em;
   top: -0.1em;
+  left: 0.5em;
   width: 1.5em;
   height: 1.5em;
-  background-image: url(img/ico-discord-50.png);
+
+  background-image: url("img/ico-discord-50.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
 
 .telegram-link::before {
-  /* border: solid 1px #000000; */
   position: absolute;
   content: "";
-  left: 0.5em;
   top: -0.1em;
+  left: 0.5em;
   width: 1.5em;
   height: 1.5em;
-  background-image: url(img/ico-telegram-50.png);
+
+  background-image: url("img/ico-telegram-50.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
 
 .github-link::before {
-  /* border: solid 1px #000000; */
   position: absolute;
   content: "";
-  left: 0.5em;
   top: 0;
+  left: 0.5em;
   width: 1.5em;
   height: 1.5em;
-  background-image: url(img/ico-github-50.png);
+
+  background-image: url("img/ico-github-50.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
@@ -549,17 +595,20 @@
 /** Skills */
 
 .skills-list {
-  border: solid 1px #008000;
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .skill-item {
   display: flex;
-  position: relative;
   justify-content: space-between;
+
+  position: relative;
+
+  margin-bottom: 0.4em;
+
   width: 16em;
-  border: solid 1px #ffff00;
 }
 
 .skill-item::before {
@@ -569,12 +618,8 @@
   left: 5em;
   width: 6em;
   height: 0.15em;
-  background-color: #5e5d6b;
-}
 
-.skill-name {
-  color: #ffffff;
-  border: solid 1px #ff0000;
+  background-color: #5e5d6b;
 }
 
 .skill-html,
@@ -599,10 +644,11 @@
   top: 50%;
   left: 5em;
   height: 0.15em;
+
   background-color: #ffc905;
 }
 
-/** width value = skill percent * 6em */
+/** value width = skill percent * scale width 6em */
 
 .skill-html::before {
   width: 4.5em;
@@ -632,66 +678,34 @@
   width: 4.5em;
 }
 
-.skill-percent {
-  border: solid 1px #ff0000;
-}
-
 /** Code */
 
 .code-pre {
   display: flex;
-
-  border: solid 1px #008000;
 }
 
 .code-code {
-  background-color: #ffc905;
   padding: 0 2em;
-  border: solid 1px #ffff00;
+
+  background-color: #ffc905;
 }
 
 /** Experience */
 
 .experience-paragraph {
-  border: solid 1px #ffff00;
   display: flex;
-}
-
-.experience-date {
-  border: solid 1px #ff0000;
-}
-
-.experience-name {
-  border: solid 1px #ff0000;
 }
 
 /** Education */
 
 .education-list {
-  border: solid 1px #008000;
-  list-style: none;
   padding: 0;
+
+  list-style: none;
   color: #ffffff;
 }
 
-.education-item {
-  border: solid 1px #ffff00;
-}
-
-.education-paragraph {
-  border: solid 1px #ffa500;
-}
-
-.education-date {
-  border: solid 1px #ff0000;
-}
-
-.education-name {
-  border: solid 1px #ff0000;
-}
-
 .education-image {
-  border: solid 1px #ffa500;
   display: block;
 }
 
@@ -699,10 +713,11 @@
 
 .english-paragraph {
   display: flex;
-  position: relative;
   justify-content: space-between;
+
+  position: relative;
+
   width: 19em;
-  border: solid 1px #ffff00;
 }
 
 .english-paragraph::before {
@@ -725,6 +740,191 @@
   background-color: #ffc905;
 }
 
+.english-image {
+  display: block;
+
+  margin-bottom: 1em;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+
+  background-color: #22222e;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+
+  padding: 0 2em;
+
+  max-width: 1440px;
+}
+
+.footer-paragraph {
+  display: flex;
+  align-items: center;
+}
+
+/** ==========================================================================
+/** Outline
+/** ========================================================================== */
+
+/** Color order */
+
+/** border: solid 1px #ff0000; red
+/** border: solid 1px #008000; green
+/** border: solid 1px #ffff00; yellow
+/** border: solid 1px #0000ff; blue
+/** border: solid 1px #ffa500; orange
+/** border: solid 1px #ffc0cb; pink */
+
+/* .nav-link {
+  border: solid 1px #ffc0cb;
+}
+
+.experience-link {
+  border: solid 1px #008000;
+}
+
+.page-header {
+  border: solid 1px #ff0000;
+}
+
+.header-container {
+  border: solid 1px #ffff00;
+}
+
+.header-nav {
+  border: solid 1px #008000;
+}
+
+.nav-list {
+  border: solid 1px #ffa500;
+}
+
+.nav-item {
+  border: solid 1px #0000ff;
+}
+
+.page-main {
+  border: solid 1px #ff0000;
+}
+
+.page-container {
+  border: solid 1px #ffff00;
+}
+
+.section-about {
+  border: solid 1px #008000;
+}
+
+.about-avatar-wrapper {
+  border: solid 1px #ffa500;
+}
+
+.about-text-wrapper {
+  border: solid 1px #ffa500;
+}
+
+.page-heading {
+  border: solid 1px #0000ff;
+}
+
+.special-heading {
+  border: solid 1px #0000ff;
+}
+
+.section-heading {
+  border: solid 1px #0000ff;
+}
+
+.about-paragraph {
+  border: solid 1px #0000ff;
+}
+
+.content-container {
+  border: solid 1px #008000;
+}
+
+.section {
+  border: solid 1px #ffa500;
+}
+
+.content-subsection-heading {
+  border: solid 1px #0000ff;
+}
+
+.contacts-list {
+  border: solid 1px #008000;
+}
+
+.skills-list {
+  border: solid 1px #008000;
+}
+
+.skill-item {
+  border: solid 1px #ffff00;
+}
+
+.skill-name {
+  border: solid 1px #ff0000;
+}
+
+.skill-percent {
+  border: solid 1px #ff0000;
+}
+
+.code-pre {
+  border: solid 1px #008000;
+}
+
+.code-code {
+  border: solid 1px #ffff00;
+}
+
+.experience-paragraph {
+  border: solid 1px #ffff00;
+}
+
+.experience-date {
+  border: solid 1px #ff0000;
+}
+
+.experience-name {
+  border: solid 1px #ff0000;
+}
+
+.education-list {
+  border: solid 1px #008000;
+}
+
+.education-item {
+  border: solid 1px #ffff00;
+}
+
+.education-paragraph {
+  border: solid 1px #ffa500;
+}
+
+.education-date {
+  border: solid 1px #ff0000;
+}
+
+.education-name {
+  border: solid 1px #ff0000;
+}
+
+.education-image {
+  border: solid 1px #ffa500;
+}
+
+.english-paragraph {
+  border: solid 1px #ffff00;
+}
+
 .english-level {
   border: solid 1px #ff0000;
 }
@@ -735,30 +935,18 @@
 
 .english-image {
   border: solid 1px #ffff00;
-  display: block;
-  margin-bottom: 1em;
 }
 
 .page-footer {
-  display: flex;
-  justify-content: center;
   border: solid 1px #ff0000;
-  background-color: #22222e;
 }
 
 .footer-container {
-  display: flex;
-  flex-basis: 80%;
-  justify-content: space-between;
-  padding: 0 2em;
   border: solid 1px #ffa500;
 }
 
 .footer-paragraph {
-  display: flex;
-  align-items: center;
   border: solid 1px #008000;
-  vertical-align: middle;
 }
 
 .copyright {
@@ -767,16 +955,8 @@
 
 .tj-link {
   border: solid 1px #ffff00;
-  margin-left: 1em;
 }
 
 .rs-link {
   border: solid 1px #ffff00;
-}
-
-/* border: solid 1px #ff0000; red
-/* border: solid 1px #ffa500; orange
-/* border: solid 1px #008000; green
-/* border: solid 1px #ffff00; yellow
-/* border: solid 1px #0000ff; blue
-/* border: solid 1px #ffc0cb; pink */
+} */
