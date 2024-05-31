@@ -1,5 +1,5 @@
 # Jacob Tarabrin
-![avatar](img/avatar-210.jpg)
+![avatar](assets/img/content/avatar-cv.jpg)
 
 ## Junior Frontend Developer
 
@@ -32,7 +32,7 @@ My goal is to become a professional developer in the field of web technologies. 
 [CV web-page on gh-pages](https://tarabrinjac.github.io/rsschool-cv/)
 
 ## Education
-* ### North Caucasus Humanitarian Technical Institute 2014-2017
+### North Caucasus Humanitarian Technical Institute 2014-2017
 Bachelor's degree
 
 
@@ -40,16 +40,16 @@ Informatics and Computer Engineering
 
 
 5 out of 8 semesters completed
-* ### HTML Academy
+### HTML Academy
 
 
-![education certificate](img/edcert-612.jpg)
+![education certificate](assets/img/content/educert-cv.jpg)
 
 
-[Basic HTML and CSS](Basic-HTML-and-CSS.pdf)
+[Basic HTML and CSS](assets/docs/Basic-HTML-and-CSS.pdf)
 
 ## English language
 A2 Elemetary - 45%
 
 
-![english certificate](img/engcert-450.png)
+![english certificate](assets/img/content/engcert-cv.png)

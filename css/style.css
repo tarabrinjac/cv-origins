@@ -230,7 +230,7 @@
   width: 1.5em;
   height: 1.5em;
 
-  background-image: url("img/ico-email-48.png");
+  background-image: url("../assets/img/decoration/ico-email.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
@@ -243,7 +243,7 @@
   width: 1.5em;
   height: 1.5em;
 
-  background-image: url("img/ico-discord-50.png");
+  background-image: url("../assets/img/decoration/ico-discord.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
@@ -256,7 +256,7 @@
   width: 1.5em;
   height: 1.5em;
 
-  background-image: url("img/ico-telegram-50.png");
+  background-image: url("../assets/img/decoration/ico-telegram.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
@@ -269,7 +269,7 @@
   width: 1.5em;
   height: 1.5em;
 
-  background-image: url("img/ico-github-50.png");
+  background-image: url("../assets/img/decoration/ico-github.png");
   background-repeat: no-repeat;
   background-size: 1.5em;
 }
