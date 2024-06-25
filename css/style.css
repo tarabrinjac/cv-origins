@@ -322,7 +322,7 @@
 
 /** Rolling Scopes logo link in footer */
 
-.rs-link {
+.rsschool-link {
   padding: 0.3em;
 
   font-size: 2.5em;
@@ -337,8 +337,8 @@
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
-.rs-link:hover,
-.rs-link:focus {
+.rsschool-link:hover,
+.rsschool-link:focus {
   text-underline-offset: 0.2em;
 
   text-decoration-color: rgba(0, 0, 0, 1);
@@ -964,6 +964,6 @@
 .tj-link {
   border: solid 1px #ffff00;
 }
-.rs-link {
+.rsschool-link {
   border: solid 1px #ffff00;
 } */
